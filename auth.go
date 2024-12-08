@@ -20,7 +20,7 @@ type Auth struct {
 	ClientSecret string
 }
 
-func New(clientID string, clientSecret string, redirectURI string, scopes []string) *Auth {
+func NewAuth(clientID string, clientSecret string, redirectURI string, scopes []string) *Auth {
 
 	return &Auth{
 		ClientID:     clientID,

@@ -1,4 +1,4 @@
-module graphServiceClient
+module github.com/linganmin/graphServiceClient
 
 go 1.18
 

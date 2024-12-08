@@ -42,7 +42,7 @@ func TestClient_GetTokens(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			c := &Client{
+			c := &Auth{
 				ClientID:     tt.fields.clientID,
 				RedirectURI:  tt.fields.redirectURI,
 				Scopes:       tt.fields.scopes,
@@ -90,7 +90,7 @@ func TestClient_RefreshAccessToken(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			c := &Client{
+			c := &Auth{
 				ClientID:     tt.fields.clientID,
 				RedirectURI:  tt.fields.redirectURI,
 				Scopes:       tt.fields.scopes,

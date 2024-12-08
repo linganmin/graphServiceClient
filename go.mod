@@ -1,4 +1,4 @@
-module getGraphServiceClient
+module graphServiceClient
 
 go 1.18
 
